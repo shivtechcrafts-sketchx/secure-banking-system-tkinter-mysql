@@ -1,0 +1,362 @@
+[
+    {
+        "label": "mysql.connector",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "DB_CONFIG",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "get_connection",
+        "importPath": "db.connection",
+        "description": "db.connection",
+        "isExtraImport": true,
+        "detail": "db.connection",
+        "documentation": {}
+    },
+    {
+        "label": "get_connection",
+        "importPath": "db.connection",
+        "description": "db.connection",
+        "isExtraImport": true,
+        "detail": "db.connection",
+        "documentation": {}
+    },
+    {
+        "label": "get_connection",
+        "importPath": "db.connection",
+        "description": "db.connection",
+        "isExtraImport": true,
+        "detail": "db.connection",
+        "documentation": {}
+    },
+    {
+        "label": "get_connection",
+        "importPath": "db.connection",
+        "description": "db.connection",
+        "isExtraImport": true,
+        "detail": "db.connection",
+        "documentation": {}
+    },
+    {
+        "label": "bcrypt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "bcrypt",
+        "description": "bcrypt",
+        "detail": "bcrypt",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "get_balance",
+        "importPath": "services.banking_service",
+        "description": "services.banking_service",
+        "isExtraImport": true,
+        "detail": "services.banking_service",
+        "documentation": {}
+    },
+    {
+        "label": "deposit",
+        "importPath": "services.banking_service",
+        "description": "services.banking_service",
+        "isExtraImport": true,
+        "detail": "services.banking_service",
+        "documentation": {}
+    },
+    {
+        "label": "withdraw",
+        "importPath": "services.banking_service",
+        "description": "services.banking_service",
+        "isExtraImport": true,
+        "detail": "services.banking_service",
+        "documentation": {}
+    },
+    {
+        "label": "transfer_money",
+        "importPath": "services.banking_service",
+        "description": "services.banking_service",
+        "isExtraImport": true,
+        "detail": "services.banking_service",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleDocTemplate",
+        "importPath": "reportlab.platypus",
+        "description": "reportlab.platypus",
+        "isExtraImport": true,
+        "detail": "reportlab.platypus",
+        "documentation": {}
+    },
+    {
+        "label": "Paragraph",
+        "importPath": "reportlab.platypus",
+        "description": "reportlab.platypus",
+        "isExtraImport": true,
+        "detail": "reportlab.platypus",
+        "documentation": {}
+    },
+    {
+        "label": "getSampleStyleSheet",
+        "importPath": "reportlab.lib.styles",
+        "description": "reportlab.lib.styles",
+        "isExtraImport": true,
+        "detail": "reportlab.lib.styles",
+        "documentation": {}
+    },
+    {
+        "label": "login_user",
+        "importPath": "services.auth_service",
+        "description": "services.auth_service",
+        "isExtraImport": true,
+        "detail": "services.auth_service",
+        "documentation": {}
+    },
+    {
+        "label": "open_dashboard",
+        "importPath": "ui.dashboard_ui",
+        "description": "ui.dashboard_ui",
+        "isExtraImport": true,
+        "detail": "ui.dashboard_ui",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "open_login",
+        "importPath": "ui.login_ui",
+        "description": "ui.login_ui",
+        "isExtraImport": true,
+        "detail": "ui.login_ui",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_connection",
+        "kind": 2,
+        "importPath": "db.connection",
+        "description": "db.connection",
+        "peekOfCode": "def get_connection():\n    return mysql.connector.connect(**DB_CONFIG)",
+        "detail": "db.connection",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_users",
+        "kind": 2,
+        "importPath": "services.admin_service",
+        "description": "services.admin_service",
+        "peekOfCode": "def get_all_users():\n    conn = get_connection()\n    cursor = conn.cursor()\n    cursor.execute(\"\"\"\n        SELECT u.user_id, u.username, a.account_id, a.account_holder, a.balance\n        FROM users u\n        JOIN accounts a ON u.account_id = a.account_id\n    \"\"\")\n    data = cursor.fetchall()\n    cursor.close()",
+        "detail": "services.admin_service",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_transactions",
+        "kind": 2,
+        "importPath": "services.admin_service",
+        "description": "services.admin_service",
+        "peekOfCode": "def get_all_transactions():\n    conn = get_connection()\n    cursor = conn.cursor()\n    cursor.execute(\"\"\"\n        SELECT t.trans_id, t.account_id, t.type, t.amount, t.created_at\n        FROM transactions t\n        ORDER BY t.created_at DESC\n    \"\"\")\n    data = cursor.fetchall()\n    cursor.close()",
+        "detail": "services.admin_service",
+        "documentation": {}
+    },
+    {
+        "label": "update_balance",
+        "kind": 2,
+        "importPath": "services.admin_service",
+        "description": "services.admin_service",
+        "peekOfCode": "def update_balance(account_id, new_balance):\n    conn = get_connection()\n    cursor = conn.cursor()\n    cursor.execute(\"\"\"\n        UPDATE accounts\n        SET balance = %s\n        WHERE account_id = %s\n    \"\"\", (new_balance, account_id))\n    conn.commit()\n    cursor.close()",
+        "detail": "services.admin_service",
+        "documentation": {}
+    },
+    {
+        "label": "delete_user",
+        "kind": 2,
+        "importPath": "services.admin_service",
+        "description": "services.admin_service",
+        "peekOfCode": "def delete_user(user_id):\n    conn = get_connection()\n    cursor = conn.cursor()\n    # First get account_id\n    cursor.execute(\"SELECT account_id FROM users WHERE user_id=%s\", (user_id,))\n    result = cursor.fetchone()\n    if not result:\n        return False\n    acc_id = result[0]\n    # Delete transactions",
+        "detail": "services.admin_service",
+        "documentation": {}
+    },
+    {
+        "label": "create_user",
+        "kind": 2,
+        "importPath": "services.admin_service",
+        "description": "services.admin_service",
+        "peekOfCode": "def create_user(username, password, holder_name, balance):\n    conn = get_connection()\n    cursor = conn.cursor()\n    # Create account\n    cursor.execute(\"\"\"\n        INSERT INTO accounts (account_holder, balance)\n        VALUES (%s, %s)\n    \"\"\", (holder_name, balance))\n    acc_id = cursor.lastrowid\n    # Create user",
+        "detail": "services.admin_service",
+        "documentation": {}
+    },
+    {
+        "label": "search_user",
+        "kind": 2,
+        "importPath": "services.admin_service",
+        "description": "services.admin_service",
+        "peekOfCode": "def search_user(keyword):\n    conn = get_connection()\n    cursor = conn.cursor()\n    cursor.execute(\"\"\"\n        SELECT u.user_id, u.username, a.account_holder, a.balance\n        FROM users u\n        JOIN accounts a ON u.account_id = a.account_id\n        WHERE u.username LIKE %s OR a.account_holder LIKE %s\n    \"\"\", (f\"%{keyword}%\", f\"%{keyword}%\"))\n    data = cursor.fetchall()",
+        "detail": "services.admin_service",
+        "documentation": {}
+    },
+    {
+        "label": "login_user",
+        "kind": 2,
+        "importPath": "services.auth_service",
+        "description": "services.auth_service",
+        "peekOfCode": "def login_user(username, password):\n    conn = get_connection()\n    cursor = conn.cursor()\n    cursor.execute(\"SELECT password, account_id FROM users WHERE username=%s\", (username,))\n    result = cursor.fetchone()\n    cursor.close()\n    conn.close()\n    if result:\n        stored_hash = result[0].encode()\n        if bcrypt.checkpw(password.encode(), stored_hash):",
+        "detail": "services.auth_service",
+        "documentation": {}
+    },
+    {
+        "label": "get_balance",
+        "kind": 2,
+        "importPath": "services.banking_service",
+        "description": "services.banking_service",
+        "peekOfCode": "def get_balance(acc_id):\n    conn = get_connection()\n    cursor = conn.cursor()\n    cursor.execute(\"SELECT balance FROM accounts WHERE account_id=%s\", (acc_id,))\n    bal = cursor.fetchone()[0]\n    cursor.close()\n    conn.close()\n    return bal\ndef deposit(acc_id, amount):\n    conn = get_connection()",
+        "detail": "services.banking_service",
+        "documentation": {}
+    },
+    {
+        "label": "deposit",
+        "kind": 2,
+        "importPath": "services.banking_service",
+        "description": "services.banking_service",
+        "peekOfCode": "def deposit(acc_id, amount):\n    conn = get_connection()\n    cursor = conn.cursor()\n    cursor.execute(\"UPDATE accounts SET balance=balance+%s WHERE account_id=%s\", (amount, acc_id))\n    cursor.execute(\"INSERT INTO transactions(account_id,type,amount) VALUES(%s,'DEPOSIT',%s)\", (acc_id, amount))\n    conn.commit()\n    cursor.close()\n    conn.close()\ndef withdraw(acc_id, amount):\n    conn = get_connection()",
+        "detail": "services.banking_service",
+        "documentation": {}
+    },
+    {
+        "label": "withdraw",
+        "kind": 2,
+        "importPath": "services.banking_service",
+        "description": "services.banking_service",
+        "peekOfCode": "def withdraw(acc_id, amount):\n    conn = get_connection()\n    cursor = conn.cursor()\n    cursor.execute(\"SELECT balance FROM accounts WHERE account_id=%s\", (acc_id,))\n    bal = cursor.fetchone()[0]\n    if bal < amount:\n        cursor.close()\n        conn.close()\n        return \"Insufficient Balance\"\n    cursor.execute(\"UPDATE accounts SET balance=balance-%s WHERE account_id=%s\", (amount, acc_id))",
+        "detail": "services.banking_service",
+        "documentation": {}
+    },
+    {
+        "label": "transfer_money",
+        "kind": 2,
+        "importPath": "services.banking_service",
+        "description": "services.banking_service",
+        "peekOfCode": "def transfer_money(sender_id, receiver_id, amount):\n    conn = get_connection()\n    cursor = conn.cursor()\n    try:\n        cursor.execute(\"SELECT balance FROM accounts WHERE account_id=%s\", (sender_id,))\n        sender_balance = cursor.fetchone()[0]\n        if sender_balance < amount:\n            return \"Insufficient Balance\"\n        cursor.execute(\"UPDATE accounts SET balance=balance-%s WHERE account_id=%s\", (amount, sender_id))\n        cursor.execute(\"UPDATE accounts SET balance=balance+%s WHERE account_id=%s\", (amount, receiver_id))",
+        "detail": "services.banking_service",
+        "documentation": {}
+    },
+    {
+        "label": "open_dashboard",
+        "kind": 2,
+        "importPath": "ui.dashboard_ui",
+        "description": "ui.dashboard_ui",
+        "peekOfCode": "def open_dashboard(root, acc_id):\n    # =========================\n    # CLEAR SCREEN\n    # =========================\n    for w in root.winfo_children():\n        w.destroy()\n    root.geometry(\"1100x600\")\n    # =========================\n    # THEME\n    # =========================",
+        "detail": "ui.dashboard_ui",
+        "documentation": {}
+    },
+    {
+        "label": "open_login",
+        "kind": 2,
+        "importPath": "ui.login_ui",
+        "description": "ui.login_ui",
+        "peekOfCode": "def open_login(root):\n    for w in root.winfo_children():\n        w.destroy()\n    root.configure(bg=\"#1e1e2e\")\n    # =======================\n    # SIDEBAR\n    # =======================\n    sidebar = tk.Frame(root, bg=\"#334155\", width=250)\n    sidebar.pack(side=\"left\", fill=\"y\")\n    # TOP",
+        "detail": "ui.login_ui",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "kind": 2,
+        "importPath": "utils.security",
+        "description": "utils.security",
+        "peekOfCode": "def hash_password(password):\n    return hashlib.sha256(password.encode()).hexdigest()\ndef verify_password(input_pass, stored_pass):\n    return hash_password(input_pass) == stored_pass",
+        "detail": "utils.security",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
+        "kind": 2,
+        "importPath": "utils.security",
+        "description": "utils.security",
+        "peekOfCode": "def verify_password(input_pass, stored_pass):\n    return hash_password(input_pass) == stored_pass",
+        "detail": "utils.security",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"Bank App\")\nroot.geometry(\"1000x600\")\nopen_login(root)\nroot.mainloop()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "DB_CONFIG",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "DB_CONFIG = {\n    \"host\": os.getenv(\"DB_HOST\"),\n    \"user\": os.getenv(\"DB_USER\"),\n    \"password\": os.getenv(\"DB_PASSWORD\"),\n    \"database\": os.getenv(\"DB_NAME\")\n}",
+        "detail": "config",
+        "documentation": {}
+    }
+]
